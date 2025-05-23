@@ -36,6 +36,7 @@ struct CodingKeysGenerator {
             inheritanceClause: TypeInheritanceClauseSyntax {
                 InheritedTypeSyntax(typeName: TypeSyntax(stringLiteral: "String"))
                 InheritedTypeSyntax(typeName: TypeSyntax(stringLiteral: "CodingKey"))
+                InheritedTypeSyntax(typeName: TypeSyntax(stringLiteral: "CaseIterable"))
             }
         ) {
             MemberDeclListSyntax(
