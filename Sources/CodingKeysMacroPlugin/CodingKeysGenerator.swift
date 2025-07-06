@@ -32,6 +32,9 @@ struct CodingKeysGenerator {
 
     func generate() -> EnumDeclSyntax {
         EnumDeclSyntax(
+            modifiers: DeclModifierListSyntax {
+                DeclModifierSyntax(name: .keyword(.public))
+            },
             identifier: .identifier("CodingKeys"),
             inheritanceClause: TypeInheritanceClauseSyntax {
                 InheritedTypeSyntax(typeName: TypeSyntax(stringLiteral: "String"))
